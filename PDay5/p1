@@ -1,0 +1,12 @@
+print(list(range(10,1,1)))
+
+print(list(range(1,10,1)))
+print(list(range(10,2,-1)))
+print(list(range(5,5)))
+# data = "s"
+# print('z' in data or 's' in data)
+
+print(range(0, 10, 2) == range(0, 11, 2))  # True or False?
+
+for i in range(10, 0, -1):
+    print(i)
