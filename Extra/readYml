@@ -1,11 +1,22 @@
 import yaml
 
+# #Reading a YAML file
+# with open('users.yml') as f:
+#     yaml_contents = yaml.load_all(f,Loader=yaml.FullLoader)
+#     print(yaml_contents)
+#     for yaml_content in yaml_contents:
+#         print(yaml_content)
+#         for key, value in yaml_content.items():
+#             print(f"{key}: {value}") 
+            
+
 #Reading a YAML file
-with open('users.yml') as f:
+with open('D:\\PythonCode\\YamlTest\\nginx.yml') as f:
     yaml_contents = yaml.load_all(f,Loader=yaml.FullLoader)
     print(yaml_contents)
+    print("----------------------------------------------")
     for yaml_content in yaml_contents:
+        print("Values")
         print(yaml_content)
         for key, value in yaml_content.items():
-            print(f"{key}: {value}") 
-            
+            print(f"{key}: {value}")             
